@@ -17,6 +17,8 @@ import "../stylesheets/whitney/whitney.css";
 import "../stylesheets/prism.css";
 import "../stylesheets/youtube.css";
 import "../stylesheets/snowflake-deconstruction.css";
+import "../stylesheets/page-guide.css";
+import PageGuide from "../components/PageGuide";
 
 const TITLE_REGEX = /<h1>(.*?)<\/h1>/;
 
@@ -69,6 +71,7 @@ export default function App({ Component, pageProps, router }: AppProps) {
             <Menu />
 
             <Component {...pageProps} />
+            <PageGuide />
           </div>
           <Footer />
         </MDX>

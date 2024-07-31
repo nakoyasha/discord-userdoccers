@@ -1,0 +1,36 @@
+html[data-theme="dark"] {
+  --active-text-color: #d8d8d8;
+  --hovered-text-color: #cccccc;
+  --inactive-text-color: #a7a7a7;
+}
+
+html[data-theme="light"] {
+  --active-text-color: #000000;
+  --hovered-text-color: #1f1f1f;
+  --inactive-text-color: #333333;
+}
+
+.page-guide-active-link::before {
+  position: absolute;
+  left: 2px;
+  content: url("/page-guide-arrow.svg");
+  /* whyyy discord */
+  transform: rotate(-90deg);
+}
+.page-guide-link:hover {
+  cursor: pointer;
+}
+
+.page-guide-active-link {
+  color: var(--active-text-color);
+  font-weight: 600;
+}
+
+.page-guide-inactive-link {
+  color: var(--inactive-text-color);
+}
+
+.page-guide-inactive-link:hover {
+  /* background-color: red; */
+  color: var(--hovered-text-color) !important;
+}
