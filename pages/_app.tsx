@@ -1,4 +1,3 @@
-import PageGuide from "../components/PageGuide";
 import classNames from "classnames";
 import type { AppProps } from "next/app";
 import { ThemeProvider } from "next-themes";
@@ -8,6 +7,7 @@ import Footer from "../components/Footer";
 import MDX from "../components/MDX";
 import Menu from "../components/Menu";
 import OpenGraph, { DEFAULT_SECTION } from "../components/OpenGraph";
+import PageGuide from "../components/PageGuide";
 import MenuContext from "../contexts/MenuContext";
 
 import "@docsearch/css";
