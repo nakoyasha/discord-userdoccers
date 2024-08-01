@@ -5,6 +5,7 @@ import { useCallback, useMemo, useState } from "react";
 import ReactDOMServer from "react-dom/server";
 import Footer from "../components/Footer";
 import MDX from "../components/MDX";
+import PageGuide from "../components/PageGuide";
 import Menu from "../components/Menu";
 import OpenGraph, { DEFAULT_SECTION } from "../components/OpenGraph";
 import MenuContext from "../contexts/MenuContext";
@@ -18,7 +19,6 @@ import "../stylesheets/prism.css";
 import "../stylesheets/youtube.css";
 import "../stylesheets/snowflake-deconstruction.css";
 import "../stylesheets/page-guide.css";
-import PageGuide from "../components/PageGuide";
 
 const TITLE_REGEX = /<h1>(.*?)<\/h1>/;
 
