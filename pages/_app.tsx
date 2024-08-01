@@ -1,3 +1,4 @@
+import PageGuide from "../components/PageGuide";
 import classNames from "classnames";
 import type { AppProps } from "next/app";
 import { ThemeProvider } from "next-themes";
@@ -5,7 +6,6 @@ import { useCallback, useMemo, useState } from "react";
 import ReactDOMServer from "react-dom/server";
 import Footer from "../components/Footer";
 import MDX from "../components/MDX";
-import PageGuide from "../components/PageGuide";
 import Menu from "../components/Menu";
 import OpenGraph, { DEFAULT_SECTION } from "../components/OpenGraph";
 import MenuContext from "../contexts/MenuContext";
